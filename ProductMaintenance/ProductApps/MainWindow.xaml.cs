@@ -35,9 +35,11 @@ namespace ProductApps
                 cProduct.calTotalPayment();
                 cProduct.calTotalCharge();
                 cProduct.calTotalWrap();
+                cProduct.calTotalGST();
                 totalPaymentTextBlock.Text = Convert.ToString(cProduct.TotalPayment);
                 tb_totalcharge.Text = Convert.ToString(cProduct.TotalCharge);
                 tb_wrap.Text = Convert.ToString(cProduct.TotalWrap);
+                tb_gst.Text = Convert.ToString(cProduct.TotalGST);
             }
             catch (FormatException)
             {
@@ -53,6 +55,7 @@ namespace ProductApps
             totalPaymentTextBlock.Text = "";
             tb_totalcharge.Text = "";
             tb_wrap.Text = "";
+            tb_gst.Text = "";
         }
 
         private void closeButton_Click(object sender, RoutedEventArgs e)
