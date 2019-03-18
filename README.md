@@ -1,2 +1,2 @@
 # TafeProductApp
-this application calculates the total price of the products
+This application calculates the total price of the products
